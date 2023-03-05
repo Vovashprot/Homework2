@@ -40,7 +40,7 @@ public class Main {
         System.out.println("Минимальная сумма трат за день составила " + min + " рублей. Максимальная сумма трат за день составила " + max + " рублей");
     }
     public static void task3() {
-        System.out.println("Task1");
+        System.out.println("Task3");
         int arr[] = generateRandomArray();
         float sum = 0;
         for (int i = 0; i < 30; i++) {
