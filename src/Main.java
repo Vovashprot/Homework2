@@ -2,6 +2,7 @@ public class Main {
     public static void main(String[] args) {
         task1();
         task2();
+        task3();
     }
 
     public static int[] generateRandomArray() {
@@ -36,6 +37,16 @@ public class Main {
                 max = arr[i];
             }
         }
-        System.out.println("Минимальная сумма трат за месяц составила " + min + " рублей. Максимальная сумма трат за месяц составила " + max + " рублей");
+        System.out.println("Минимальная сумма трат за день составила " + min + " рублей. Максимальная сумма трат за день составила " + max + " рублей");
+    }
+    public static void task3() {
+        System.out.println("Task1");
+        int arr[] = generateRandomArray();
+        float sum = 0;
+        for (int i = 0; i < 30; i++) {
+            sum = sum + arr[i];
+        }
+        float mid = sum / 30;
+        System.out.println("Средняя сумма трат за месяц составила " + mid + " рублей.");
     }
 }
